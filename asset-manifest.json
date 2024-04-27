@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/shopkart/static/css/main.c5a68d16.css",
+    "main.js": "/shopkart/static/js/main.7df124cf.js",
+    "static/js/453.c1eba7ba.chunk.js": "/shopkart/static/js/453.c1eba7ba.chunk.js",
+    "static/media/bn3.jpg": "/shopkart/static/media/bn3.0c53b35d4eb18c224fd9.jpg",
+    "static/media/bn4.jpg": "/shopkart/static/media/bn4.7c6dd556d33f53dd251f.jpg",
+    "static/media/bn2.jpg": "/shopkart/static/media/bn2.da60ec699d646b5c9ba1.jpg",
+    "static/media/home.png": "/shopkart/static/media/home.486aff5dfc2b1d1484b6.png",
+    "static/media/children.png": "/shopkart/static/media/children.d3ea2c259316beb35840.png",
+    "static/media/bn1.jpg": "/shopkart/static/media/bn1.7cca5ef19668ba8d6201.jpg",
+    "static/media/toys.png": "/shopkart/static/media/toys.9436090dbb746a2907b3.png",
+    "static/media/poster.jpg": "/shopkart/static/media/poster.a7c8bc3e4009c8a3d088.jpg",
+    "static/media/prof.png": "/shopkart/static/media/prof.fb255d71f62e2d89cdd7.png",
+    "static/media/accessories.png": "/shopkart/static/media/accessories.de34a737721e1fc48ff0.png",
+    "static/media/female.png": "/shopkart/static/media/female.f31affc01932a6b98bb3.png",
+    "static/media/back.png": "/shopkart/static/media/back.c238ecf487fdbf5ce766.png",
+    "static/media/cart.png": "/shopkart/static/media/cart.6cca81dfaa7b4521c318.png",
+    "static/media/footwear.png": "/shopkart/static/media/footwear.acbcdae09606c8d7be0e.png",
+    "index.html": "/shopkart/index.html",
+    "main.c5a68d16.css.map": "/shopkart/static/css/main.c5a68d16.css.map",
+    "main.7df124cf.js.map": "/shopkart/static/js/main.7df124cf.js.map",
+    "453.c1eba7ba.chunk.js.map": "/shopkart/static/js/453.c1eba7ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5a68d16.css",
+    "static/js/main.7df124cf.js"
+  ]
+}
