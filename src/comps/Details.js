@@ -12,6 +12,7 @@ export default function Details(props) {
   const [name, setname] = useState()
   const [price, setprice] = useState()
   const [lik, setlik] = useState()
+  const [ca ,setca] = useState("Add to cart")
   useEffect(() => {
 
 
@@ -28,26 +29,27 @@ export default function Details(props) {
     {
       if (props.name === carr[i])
       {
-        document.getElementById('gg').innerText="Remove from cart";
+        setca("Remove from cart")
      
         break;
   
       }
     
-      document.getElementById('gg').innerText="Add to cart";
+      setca("Add to cart")
       t=0;
     }
   
     
  
-  });
+  }, [props.name]);
 
 
 const jj = () => {
  if (t===0)
  {
-  document.getElementById('gg').innerText="Remove from cart";
+  setca("Remove from cart")
   carr.push(props.name)
+  localStorage.setItem(props.name, ca)
   t=1;
  }
  else if (t===1){
@@ -59,7 +61,7 @@ const index = carr.indexOf(props.name);
 
 const z = carr.splice(index, 1);
 carr = z;
-document.getElementById('gg').innerText="Add to cart";
+setca("Add to cart")
 
 t=0;
 
@@ -97,17 +99,21 @@ t=0;
                <span className="gh-2">₹{price}</span>
                <div className="options">
                   
-                   <button id="gg"  onClick={jj}>Add to Cart</button>
+                   <button id="gg"  onClick={jj}>{ca}</button>
                   
                </div>
            </div>
            <div className="description">
-               <p>A very good product which is made of very nice materials and is of the highest quality available. good product which is made of very nice materials and is of the highest quality available
+           
+               <p>
+              
+                A very good product which is made of very nice materials and is of the highest quality available. good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality.
+            
                </p>
-             
+            
                <ul className="social">
                    <li><a href="/"><i className="fa-brands fa-facebook-f"></i></a></li>
                    <li><a href="/"><i className="fa-brands fa-instagram"></i></a></li>
@@ -120,3 +126,9 @@ t=0;
   )
 }
 
+/*   <div className="op-b">
+            <button>Variant 1</button>
+            <button>Variant 2</button>
+            <button>Variant 3</button>
+            <button>Variant 4</button>
+            </div> */

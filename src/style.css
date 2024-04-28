@@ -10,14 +10,15 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
     line-height: 1;
     padding: 0;
     margin: 0;
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -142,9 +143,28 @@ text-align: center;
 
 .box .description p {
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
 }
+.op-b 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.op-b button 
+{
+   padding: 10px;
+   font-weight: bolder;
+   border-radius: 5px;
+   margin: 10px;
+  border: none;
+  width: 300px;
+}
+
+
 
 .box .description .features {
     list-style: none;
@@ -161,7 +181,7 @@ text-align: center;
     text-align: center;
 
 
-
+    width: 300px;
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
