@@ -36,11 +36,11 @@ export default function Navbar(props) {
     {
       if(!x.includes("women"))
       {
-      window.location.href = '/#/mens';
+      window.location.href = '/shopkart/#/mens';
       }
       else if(x.includes("women"))
       {
-        window.location.href = '/#/women';
+        window.location.href = '/shopkart/#/women';
       }
 
     }
@@ -48,19 +48,19 @@ export default function Navbar(props) {
 
     else if(x.includes("kid"))
     {
-      window.location.href = '/#/kids';
+      window.location.href = '/shopkart/#/kids';
     }
     else if(x.includes("bag"))
     {
-      window.location.href = '/#/purse';
+      window.location.href = '/shopkart/#/purse';
     }
     else if(x.includes("shoe"))
     {
-      window.location.href = '/#/shoes';
+      window.location.href = '/shopkart/#/shoes';
     }
     else if(x.includes("toy"))
     {
-      window.location.href = '/#/toys';
+      window.location.href = '/shopkart/#/toys';
     }
     let element=document.getElementById('s-f')
     element.blur()
