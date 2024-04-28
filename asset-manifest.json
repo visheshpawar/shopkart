@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopkart/static/css/main.4e2d2b13.css",
-    "main.js": "/shopkart/static/js/main.e2c8f5cc.js",
+    "main.js": "/shopkart/static/js/main.9b15b047.js",
     "static/js/453.c1eba7ba.chunk.js": "/shopkart/static/js/453.c1eba7ba.chunk.js",
     "static/media/bn3.jpg": "/shopkart/static/media/bn3.0c53b35d4eb18c224fd9.jpg",
     "static/media/bn4.jpg": "/shopkart/static/media/bn4.7c6dd556d33f53dd251f.jpg",
@@ -19,11 +19,11 @@
     "static/media/footwear.png": "/shopkart/static/media/footwear.acbcdae09606c8d7be0e.png",
     "index.html": "/shopkart/index.html",
     "main.4e2d2b13.css.map": "/shopkart/static/css/main.4e2d2b13.css.map",
-    "main.e2c8f5cc.js.map": "/shopkart/static/js/main.e2c8f5cc.js.map",
+    "main.9b15b047.js.map": "/shopkart/static/js/main.9b15b047.js.map",
     "453.c1eba7ba.chunk.js.map": "/shopkart/static/js/453.c1eba7ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e2d2b13.css",
-    "static/js/main.e2c8f5cc.js"
+    "static/js/main.9b15b047.js"
   ]
 }
