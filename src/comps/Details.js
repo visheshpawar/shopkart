@@ -1,24 +1,39 @@
 import React from "react";
 import "../style.css";
-import {  useEffect } from 'react';
+import {  useEffect ,useState} from 'react';
 
 var carr=[];
 
 var t = 0;
-
+let x = "name";
+let y = "price";
+let z = "lik";
 export default function Details(props) {
+  const [name, setname] = useState()
+  const [price, setprice] = useState()
+  const [lik, setlik] = useState()
   useEffect(() => {
+
+
+  
+    let fm = (localStorage.getItem(x));
+    setname(fm)
+    let fmm = (localStorage.getItem(y));
+    setprice(fmm)
+    let fmmmm = (localStorage.getItem(z));
+    setlik(fmmmm)
+
+   
     for(var i=0; i < carr.length; i++)
     {
       if (props.name === carr[i])
       {
         document.getElementById('gg').innerText="Remove from cart";
-        t=1;
+     
         break;
   
       }
-   
-     
+    
       document.getElementById('gg').innerText="Add to cart";
       t=0;
     }
@@ -66,12 +81,12 @@ t=0;
        <div className="box">
            <div className="images">
                <div className="img-holder active">
-                   <img src={props.lk} alt="er"/>
+                   <img src={lik} alt="er"/>
                </div>
              
            </div>
            <div className="basic-info">
-               <h1 className="gh-1">{props.name}</h1>
+               <h1 className="gh-1">{name}</h1>
                <div className="rate">
                    <i className="filled fas fa-star"></i>
                    <i className="filled fas fa-star"></i>
@@ -79,7 +94,7 @@ t=0;
                    <i className="filled fas fa-star"></i>
                    <i className="filled fas fa-star"></i>
                </div>
-               <span className="gh-2">₹{props.price}</span>
+               <span className="gh-2">₹{price}</span>
                <div className="options">
                   
                    <button id="gg"  onClick={jj}>Add to Cart</button>

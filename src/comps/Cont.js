@@ -28,11 +28,12 @@ export default function Cont(props) {
       <div className="hdr">Categories</div>
       <Categor />
       <Slder />
-      <div className="hdr">Bestsellers</div>
+      <div className="hdr" >Bestsellers</div>
 
 
 
       <div className="main">
+        
         <ul className="cards">
           <Item
             price="3999"
