@@ -32,9 +32,7 @@ e.preventDefault()
     <div className="card_content">
       <h2 className="card_title" >{props.title}</h2>
       <p className="card_text">₹{pi}/-</p>
-     <form>
-     <button className="btn card_btn" type="buttton" id="fg"  >Details</button>
-      </form>
+     
     </div>
   </div></Link>
 </li>
