@@ -11,7 +11,7 @@ const cwd = (e) =>
 {
 
   props.cw([props.title,props.iurl,pi])
-  window.location.href = '/#/details'
+  //window.location.href = '/#/details'
 
  
 e.preventDefault()
@@ -23,8 +23,9 @@ e.preventDefault()
 
   return (
 <>
-<li className="cards_item">
-  <div className="card">
+
+<li className="cards_item" onClick={cwd}>
+<Link to="/details" className="gu">   <div className="card">
     <div className="card_image">
   <img src={props.iurl}  />
     </div>
@@ -32,10 +33,10 @@ e.preventDefault()
       <h2 className="card_title" >{props.title}</h2>
       <p className="card_text">₹{pi}/-</p>
      <form>
-      <button className="btn card_btn" type="submit" id="fg" onClick={cwd} >Details</button>
+     <button className="btn card_btn" type="buttton" id="fg"  >Details</button>
       </form>
     </div>
-  </div>
+  </div></Link>
 </li>
 </>
   )

@@ -471,6 +471,11 @@ section {
  {
   background-color: #000000;
  }
+ .gu 
+ {
+  color: white;
+  text-decoration: none;
+ }
 /*=========Recent-post==========*/
 .title_bx h3.title {
     font-size: 22px;
