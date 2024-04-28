@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopkart/static/css/main.c5a68d16.css",
-    "main.js": "/shopkart/static/js/main.7df124cf.js",
+    "main.css": "/shopkart/static/css/main.4e2d2b13.css",
+    "main.js": "/shopkart/static/js/main.9b15b047.js",
     "static/js/453.c1eba7ba.chunk.js": "/shopkart/static/js/453.c1eba7ba.chunk.js",
     "static/media/bn3.jpg": "/shopkart/static/media/bn3.0c53b35d4eb18c224fd9.jpg",
     "static/media/bn4.jpg": "/shopkart/static/media/bn4.7c6dd556d33f53dd251f.jpg",
@@ -18,12 +18,12 @@
     "static/media/cart.png": "/shopkart/static/media/cart.6cca81dfaa7b4521c318.png",
     "static/media/footwear.png": "/shopkart/static/media/footwear.acbcdae09606c8d7be0e.png",
     "index.html": "/shopkart/index.html",
-    "main.c5a68d16.css.map": "/shopkart/static/css/main.c5a68d16.css.map",
-    "main.7df124cf.js.map": "/shopkart/static/js/main.7df124cf.js.map",
+    "main.4e2d2b13.css.map": "/shopkart/static/css/main.4e2d2b13.css.map",
+    "main.9b15b047.js.map": "/shopkart/static/js/main.9b15b047.js.map",
     "453.c1eba7ba.chunk.js.map": "/shopkart/static/js/453.c1eba7ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a68d16.css",
-    "static/js/main.7df124cf.js"
+    "static/css/main.4e2d2b13.css",
+    "static/js/main.9b15b047.js"
   ]
 }
