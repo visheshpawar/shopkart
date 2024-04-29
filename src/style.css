@@ -139,13 +139,70 @@ text-align: center;
     color: white;
     text-align: center;
     gap: 25px;
+  
 }
-
+.li-it 
+{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+}
 .box .description p {
     color: white;
     font-size: 13px;
     line-height: 1.5;
 }
+.d-i 
+{
+    width: 25px;
+    margin:0px  10px;
+}
+.cub {
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d-io 
+{
+    width: 50px;
+   
+}
+
+
+
+.d-io1
+{
+    width: 80px;
+   
+}
+
+.ido 
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+.ouch 
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-i1
+{
+    width: 55px;
+   
+}
+
 .op-b 
 {
     width: 100%;

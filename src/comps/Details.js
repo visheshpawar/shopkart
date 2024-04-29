@@ -1,7 +1,10 @@
 import React from "react";
 import "../style.css";
 import {  useEffect ,useState} from 'react';
-
+import fs from './fs.png';
+import cod from './cod.png';
+import ret from './ret.png';
+import qd from './qd.png';
 var carr=[];
 
 var t = 0;
@@ -97,14 +100,10 @@ t=0;
                    <i className="filled fas fa-star"></i>
                </div>
                <span className="gh-2">₹{price}</span>
-               <div className="options">
-                  
-                   <button id="gg"  onClick={jj}>{ca}</button>
-                  
-               </div>
+            
            </div>
            <div className="description">
-           
+         
                <p>
               
                 A very good product which is made of very nice materials and is of the highest quality available. good product which is made of very nice materials and is of the highest quality available
@@ -113,15 +112,34 @@ t=0;
                A very good product which is made of very nice materials and is of the highest quality.
             
                </p>
-            
-               <ul className="social">
-                   <li><a href="/"><i className="fa-brands fa-facebook-f"></i></a></li>
-                   <li><a href="/"><i className="fa-brands fa-instagram"></i></a></li>
-                   <li><a href="/"><i className="fa-brands fa-twitter"></i></a></li>
-               </ul>
-           </div>
+               <div className="options">
+               <div className="cub">
+          <div className="ido">
+     <div className="ouch">  <img className="d-io1" src={fs}/></div>
+    <div className="ouch">   <img className="d-io1" src={cod}/></div>
        </div>
+       <div className="ido">
+     <div className="ouch">  <img className="d-io" src={ret}/></div>
+     <div className="ouch">  <img className="d-io1" src={qd}/></div>
+       </div>
+       </div>
+                  <button id="gg"  onClick={jj}>{ca}</button>
+            
+              </div>
+      
+           </div>
+    
+
+       </div>
+
+
+
+
+       
    </div>
+
+  
+
      </>
   )
 }
