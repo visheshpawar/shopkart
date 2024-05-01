@@ -1,10 +1,5 @@
 import "./App.css";
-import { useNavigate } from "react-router-dom";
-import Banner from "./comps/Banner";
-import Categor from "./comps/Categor";
-import Slder from "./comps/Slder";
 import Cont from "./comps/Cont";
-import Info from "./comps/Info";
 import Navbar from "./comps/Navbar";
 import React, { Component, useEffect, useState } from "react";
 import Details from "./comps/Details";
@@ -16,7 +11,6 @@ import Kids from "./comps/Kids";
 import Shoes from "./comps/Shoes";
 import St from "./comps/St";
 import{
-
   HashRouter as Router,
   Link,
   Routes,
@@ -27,17 +21,17 @@ import{
 import Cart from "./comps/Cart";
 import Item from "./comps/Item";
 import Cari from "./comps/Cari";
-
-
-
 var fg = "";
 var fgg="";
 var xf = 0;
+
+var hml = "price";
+var vg = [];
 export default function App() {
 
-  const [prc, setprc] = useState(0)
+  const [prc, setprc] = useState(0);
 
-
+  const [dp, setdp] = useState(0)
 
 
 const Pp = (val) =>
@@ -49,7 +43,23 @@ fgg= val[1]
 xf=val[2]
 }
 
+const dai = (data) =>
+{
 
+
+
+
+let f1=dp;
+let f2 = Number(data[1])
+
+ 
+   setdp(f1+f2);
+   
+ 
+
+  vg.push(data);
+
+}
 
   
   
@@ -59,9 +69,8 @@ xf=val[2]
 
     <Router>
        <St/>
-       <Navbar title="ShopKart"/>  
-      
-       <Routes  >
+       <Navbar title="ShopKart"/>       
+       <Routes>
        <Route  default element = {<Cont stp={Pp} />} />
        <Route exact path="/" element = {<Cont stp={Pp} />} />
        <Route exact path="/mens" element = {<Men  stp={Pp} />} />
@@ -70,15 +79,9 @@ xf=val[2]
        <Route exact path="/toys" element = {<Toys stp={Pp}/>} />
        <Route exact path="/purse" element = {<Purse stp={Pp}/>} />
        <Route exact path="/shoes" element = {<Shoes stp={Pp}/>} />
-       <Route exact path="/details" element = {<Details price = {xf}  name = {fg} lk={fgg} />} />
-       <Route exact path="/cart" element = {<Cart />} />
-       
- 
-       
-    
-      
-    </Routes>
-    
+       <Route exact path="/details" element = {<Details kg={dai} price = {xf}  name = {fg} lk={fgg} />} />
+       <Route exact path="/cart" element = {<Cart detao = {vg}  price={dp} />} />
+    </Routes> 
     </Router>
     </>
   )

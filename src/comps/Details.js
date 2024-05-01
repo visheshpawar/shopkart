@@ -1,18 +1,22 @@
 import React from "react";
 import "../style.css";
+
 import {  useEffect ,useState} from 'react';
 import fs from './fs.png';
 import cod from './cod.png';
 import ret from './ret.png';
 import qd from './qd.png';
+import Cart from "./Cart";
 var carr=[];
 
 var t = 0;
 let x = "name";
 let y = "price";
 let z = "lik";
+
 export default function Details(props) {
   const [name, setname] = useState()
+  
   const [price, setprice] = useState()
   const [lik, setlik] = useState()
   const [ca ,setca] = useState("Add to cart")
@@ -22,53 +26,29 @@ export default function Details(props) {
   
     let fm = (localStorage.getItem(x));
     setname(fm)
+    
+
+   
+
     let fmm = (localStorage.getItem(y));
     setprice(fmm)
     let fmmmm = (localStorage.getItem(z));
     setlik(fmmmm)
 
-   
-    for(var i=0; i < carr.length; i++)
-    {
-      if (props.name === carr[i])
-      {
-        setca("Remove from cart")
-     
-        break;
-  
-      }
-    
-      setca("Add to cart")
-      t=0;
-    }
-  
+
     
  
   }, [props.name]);
 
 
 const jj = () => {
- if (t===0)
- {
-  setca("Remove from cart")
-  carr.push(props.name)
-  localStorage.setItem(props.name, ca)
-  t=1;
- }
- else if (t===1){
 
   
+  localStorage.setItem(props.name, ca)
+ 
+props.kg([name, price, lik  ]);
+ 
 
-
-const index = carr.indexOf(props.name);
-
-const z = carr.splice(index, 1);
-carr = z;
-setca("Add to cart")
-
-t=0;
-
- }
  
 }
 
@@ -99,7 +79,7 @@ t=0;
                    <i className="filled fas fa-star"></i>
                    <i className="filled fas fa-star"></i>
                </div>
-               <span className="gh-2">₹{price}</span>
+               <span className="gh-2">₹{price}/-</span>
             
            </div>
            <div className="description">
@@ -115,12 +95,12 @@ t=0;
                <div className="options">
                <div className="cub">
           <div className="ido">
-     <div className="ouch">  <img className="d-io1" src={fs}/></div>
-    <div className="ouch">   <img className="d-io1" src={cod}/></div>
+     <div className="ouch">  <img className="d-io1" src={fs}  alt="ikj" / ></div>
+    <div className="ouch">   <img className="d-io1" src={cod}  alt="ikj" / ></div>
        </div>
        <div className="ido">
-     <div className="ouch">  <img className="d-io" src={ret}/></div>
-     <div className="ouch">  <img className="d-io1" src={qd}/></div>
+     <div className="ouch">  <img className="d-io" src={ret}  alt="ikj" / ></div>
+     <div className="ouch">  <img className="d-io1" src={qd}  alt="ikj" / ></div>
        </div>
        </div>
                   <button id="gg"  onClick={jj}>{ca}</button>

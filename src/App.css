@@ -68,7 +68,10 @@ body {
   margin: 50px 0px;
   text-shadow: 0px 11px 10px rgba(13, 13, 13, 0.633);
 }
-
+#bh2 
+{
+  display: none;
+}
 h1 {
   font-size: 24px;
   font-family: "Quicksand", sans-serif;
@@ -84,11 +87,7 @@ img {
   vertical-align: middle;
 }
 
-.det-1 {
-  width: 100vw;
-  height: 80vh;
-  overflow-y: scroll;
-}
+
 
 .q-t {
   display: flex;
@@ -104,24 +103,7 @@ img {
   height: 20px;
   border: none;
 }
-.crt-i {
-  width: 100vw;
 
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding-bottom: 100px;
-  align-items: center;
-}
-
-.ctr-ii {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  height: 150px;
-  margin: 3px;
-  background-color: black;
-}
 .lft {
   width: 45%;
   height: 100%;
@@ -158,27 +140,7 @@ img {
   width: 300px;
 }
 
-.foot {
-  width: 100vw;
-  background-color: black;
-  position: fixed;
-  bottom: 0%;
-  height: 8vh;
-  color: white;
-  display: flex;
-  align-items: center;
-}
 
-.lf {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.rf {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
 
 #bac-b {
   display: none;
@@ -889,18 +851,6 @@ section {
   }
 }
 
-.but {
-  width: 100px;
-  height: 40px;
-  font-weight: bolder;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 25px;
-  border: none;
-}
-.but:hover {
-  cursor: pointer;
-}
 
 .c-e {
   width: 100vw;
