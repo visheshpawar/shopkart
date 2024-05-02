@@ -33,7 +33,7 @@ export default function App() {
 
   const [dp, setdp] = useState(0)
   const [dop, setdop] = useState()
-
+  const [dopo, setdopo] = useState()
 const Pp = (val) =>
 {
 let x = (val[2])
@@ -50,13 +50,14 @@ const dai = (data) =>
 
 
 let f1=dp;
-let f2 = Number(data[1])
+let f2 = Number(data)
 
  
-   setdp(f1+f2);
+  
    
- 
+ var lm = f1+f2;
 
+ setdp(lm);
   vg.push(data);
 
 }
@@ -67,7 +68,7 @@ setdop(dat)
 
 
   }
-  
+
 
   return (
     <>
@@ -84,8 +85,8 @@ setdop(dat)
        <Route exact path="/toys" element = {<Toys stp={Pp}/>} />
        <Route exact path="/purse" element = {<Purse stp={Pp}/>} />
        <Route exact path="/shoes" element = {<Shoes stp={Pp}/>} />
-       <Route exact path="/details" element = {<Details kg={dai} kig={daim} price = {xf}  name = {fg} lk={fgg} />} />
-       <Route exact path="/cart" element = {<Cart detao = {vg} demp={dop} price={dp} />} />
+       <Route exact path="/details" element = {<Details kg={dai} kig={daim}  price = {xf}  name = {fg} lk={fgg} />} />
+       <Route exact path="/cart" element = {<Cart detao = {vg} demp={dop}  price={dp} />} />
     </Routes> 
     </Router>
 

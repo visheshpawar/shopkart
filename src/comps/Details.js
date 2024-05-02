@@ -39,16 +39,7 @@ setnae(ip)
     setlik(fmmmm)
 
 
-if (ty.includes(name))
-{
 
-document.getElementById('gg').innerHTML="Added to cart"
-}
-else if (!(ty.includes(name))){
-
-  document.getElementById('gg').innerHTML="Add to cart"
-
-}
  
   }, [name]);
 
@@ -64,18 +55,13 @@ if  (!(ads.includes(nae)))
 {
   ads.push(nae)
   props.kig(ads);
+  props.kg(price)
 }
 
 
 
 
 
-if (!(ty.includes(name)))
-{
-  ty.push(name)
-
-  document.getElementById('gg').innerHTML="Added to cart";
-}
 
 }
 
@@ -118,7 +104,7 @@ if (!(ty.includes(name)))
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality.
-            {props.price}
+      
                </p>
                <div className="options">
                <div className="cub">

@@ -6,8 +6,24 @@ const Carm = (props) => {
 
 const removeitem = (data) => {
 document.getElementById(data).style.display="none";
+props.jb(props.price)
+console.log(props.title+1)
 }
 
+const dfr = () =>{
+ let s = document.getElementById(props.title+1).value;
+ if (s>1)
+ {
+ document.getElementById(props.title+1).value=s-1;
+
+ }
+}
+const afr = () =>{
+  let a = Number(document.getElementById(props.title+1).value);
+  document.getElementById(props.title+1).value=a+1;
+
+ }
+ 
 
   return (
     <div id={props.title}>
@@ -19,9 +35,9 @@ document.getElementById(data).style.display="none";
     <hr className='lin'/>
     <div className='gho'>
     
-    <button className='d5'   >-</button>
-    <input readOnly id='d-4' value={1}/ >
-    <button className='d5'>+</button>
+    <button className='d5'  onClick={dfr} >-</button>
+    <input readOnly className='d-4' value={1}  id={props.title+1} / >
+    <button className='d5' onClick={afr} >+</button>
     
     </div>
     </div>

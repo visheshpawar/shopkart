@@ -123,6 +123,13 @@ img {
     align-items: center;
   
 }
+#cd {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  font-size: 25px;
+}
 .ehi {
     width: 100vw;
     display: flex;
@@ -143,7 +150,7 @@ img {
 }
 
 
-#d-4 {
+.d-4 {
     width: 20px;
     border: none;
     height: 20px;
