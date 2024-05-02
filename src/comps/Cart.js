@@ -1,90 +1,68 @@
-import React from 'react'
-import { useState,  useEffect } from 'react'
-
-import '../style.css'
-
-import St from './St'
-
-//import Cari from './Cari'
+import React , {useState, useEffect}from 'react'
+import '../App.css'
+import product from "./alit.json";
+import Carm from './Carm';
 export default function Cart(props) {
- // var mx=0;
+  const arr=props.demp;
 
+ /* useEffect(() => {
 
+    console.log(arr)
+  }, []);
+    
 
-
-
-/*
-useEffect(() => {
-
-
-
-
-
- }
- 
-
-
-
-}, [props.name]);
 */
+  const for_loop = []
+
+  if (arr){
+  for (let i=0;i<arr.length;i++) {
+    for_loop.push(
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const cgs = () => 
-{
-
-console.log("hello")
+      product.filter((item)=>item.id== arr[i] ).map((item)=>(
+        <Carm key={item.id} id= {item.id} title={item.title} iurl={item.iurl} price={item.price} />
+        
+        ))
+      
+      
+  
+  
+  );
 }
+  };
+
+
+
+
+
+
 
 
   return (
-    <>
-       
+ 
 
 
-<St/>
-
-
-        <div className='det-1'>
-
-        <h1 id='bh1' onClick={cgs} >Nothing Here</h1>
-  
-<div className='crt-i' id='c-y'>
-
-
-</div>
-
-
-
-
-
-
-        <div className='foot'>
-            <div className='lf' id='c-m'>₹{props.price}</div>
-            <div className='rf'><button className='but'>Proceed</button></div>
-            
-            </div>
-        </div> 
-        
-       
     
-    </>
+    <div className='ehi'>
+
+{for_loop}
+
+
+
+
+
+<div className='couy'>
+	<div> Total Amount : ₹0/-</div>
+	<div><button className='bom'>Proceed To Pay</button></div>
+</div>
+  
+
+
+
+
+
+	   
+    </div>
   )
 }
 

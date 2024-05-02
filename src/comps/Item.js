@@ -9,6 +9,7 @@ const [pii, setpii] = useState(0);
 let x="name";
 let y="price";
 let z="lik";
+let g="id";
 const cwd = (e) =>
 {
 
@@ -17,7 +18,7 @@ const cwd = (e) =>
 localStorage.setItem(x , props.title)
 localStorage.setItem(y , pi)
 localStorage.setItem(z , props.iurl)
- 
+localStorage.setItem(g , props.id)
 e.preventDefault()
 
 }

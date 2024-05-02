@@ -20,11 +20,11 @@ import{
 } from "react-router-dom";
 import Cart from "./comps/Cart";
 import Item from "./comps/Item";
-import Cari from "./comps/Cari";
+
 var fg = "";
 var fgg="";
 var xf = 0;
-
+var cemi = "cart";
 var hml = "price";
 var vg = [];
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
   const [prc, setprc] = useState(0);
 
   const [dp, setdp] = useState(0)
-
+  const [dop, setdop] = useState()
 
 const Pp = (val) =>
 {
@@ -61,7 +61,12 @@ let f2 = Number(data[1])
 
 }
 
-  
+  const daim = (dat) =>{
+
+setdop(dat)
+
+
+  }
   
 
   return (
@@ -79,10 +84,11 @@ let f2 = Number(data[1])
        <Route exact path="/toys" element = {<Toys stp={Pp}/>} />
        <Route exact path="/purse" element = {<Purse stp={Pp}/>} />
        <Route exact path="/shoes" element = {<Shoes stp={Pp}/>} />
-       <Route exact path="/details" element = {<Details kg={dai} price = {xf}  name = {fg} lk={fgg} />} />
-       <Route exact path="/cart" element = {<Cart detao = {vg}  price={dp} />} />
+       <Route exact path="/details" element = {<Details kg={dai} kig={daim} price = {xf}  name = {fg} lk={fgg} />} />
+       <Route exact path="/cart" element = {<Cart detao = {vg} demp={dop} price={dp} />} />
     </Routes> 
     </Router>
+
     </>
   )
 }

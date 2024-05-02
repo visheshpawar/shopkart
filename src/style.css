@@ -265,6 +265,12 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
 }
+
+
+.lin {
+    width: 80%;
+}
+
 .op-b button 
 {
    padding: 10px;

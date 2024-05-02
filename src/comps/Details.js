@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../style.css";
-
+import product from "./alit.json"
 import {  useEffect ,useState} from 'react';
+import { useDispatchCart } from "./Cart1";
 import fs from './fs.png';
 import cod from './cod.png';
 import ret from './ret.png';
 import qd from './qd.png';
 import Cart from "./Cart";
 var carr=[];
-
+var ads=[];
 var t = 0;
 let x = "name";
 let y = "price";
 let z = "lik";
-
+let g="id";
 export default function Details(props) {
   const [name, setname] = useState()
-  
+  const [nae, setnae] = useState(0)
   const [price, setprice] = useState()
   const [lik, setlik] = useState()
   const [ca ,setca] = useState("Add to cart")
@@ -26,9 +27,10 @@ export default function Details(props) {
   
     let fm = (localStorage.getItem(x));
     setname(fm)
-    
+  
+let ip = (localStorage.getItem(g));
+setnae(ip)
 
-   
 
     let fmm = (localStorage.getItem(y));
     setprice(fmm)
@@ -52,6 +54,20 @@ props.kg([name, price, lik  ]);
  
 }
 
+
+const gg = () =>{
+
+
+
+if  (!(ads.includes(nae)))
+{
+  ads.push(nae)
+}
+
+
+
+props.kig(ads);
+}
 
 
 
@@ -90,7 +106,7 @@ props.kg([name, price, lik  ]);
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality available
                A very good product which is made of very nice materials and is of the highest quality.
-            
+            {props.price}
                </p>
                <div className="options">
                <div className="cub">
@@ -103,8 +119,21 @@ props.kg([name, price, lik  ]);
      <div className="ouch">  <img className="d-io1" src={qd}  alt="ikj" / ></div>
        </div>
        </div>
-                  <button id="gg"  onClick={jj}>{ca}</button>
+                  <button id="gg"  onClick={gg}>Add to cart</button>
             
+
+
+
+   
+
+
+
+
+
+
+
+
+
               </div>
       
            </div>

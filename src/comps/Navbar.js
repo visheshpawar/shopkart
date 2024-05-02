@@ -2,12 +2,13 @@ import React, { useState,Component } from 'react'
 import '../App.css'
 import {Link, useLocation} from 'react-router-dom';
 import cart from './cart.png'
+import { useCart } from './Cart1';
 import prof from './prof.png'
 import hom from './home.png'
 import Info from './Info'
 import Bak from './Bak';
 export default function Navbar(props) {
-
+const items = useCart();
   const opac = () =>
   {
     document.getElementById('jy-1').style.animation=" .5s comer linear 1";
@@ -102,7 +103,7 @@ const [text, Settext] = useState("")
     </div>
   <Link to="/cart">
     <img src={cart} className='r-name' alt='imag'  />
-   
+  
     </Link>
     <img src={prof} className='r-name' alt="imag" onClick={opac}/>
   
