@@ -9,6 +9,7 @@ import ret from './ret.png';
 import qd from './qd.png';
 import Cart from "./Cart";
 var carr=[];
+var ty = [];
 var ads=[];
 var t = 0;
 let x = "name";
@@ -20,7 +21,7 @@ export default function Details(props) {
   const [nae, setnae] = useState(0)
   const [price, setprice] = useState()
   const [lik, setlik] = useState()
-  const [ca ,setca] = useState("Add to cart")
+  const [ca ,setca] = useState()
   useEffect(() => {
 
 
@@ -38,21 +39,21 @@ setnae(ip)
     setlik(fmmmm)
 
 
-    
- 
-  }, [props.name]);
+if (ty.includes(name))
+{
 
-
-const jj = () => {
-
-  
-  localStorage.setItem(props.name, ca)
- 
-props.kg([name, price, lik  ]);
- 
-
- 
+document.getElementById('gg').innerHTML="Added to cart"
 }
+else if (!(ty.includes(name))){
+
+  document.getElementById('gg').innerHTML="Add to cart"
+
+}
+ 
+  }, [name]);
+
+
+
 
 
 const gg = () =>{
@@ -62,12 +63,23 @@ const gg = () =>{
 if  (!(ads.includes(nae)))
 {
   ads.push(nae)
+  props.kig(ads);
 }
 
 
 
-props.kig(ads);
+
+
+if (!(ty.includes(name)))
+{
+  ty.push(name)
+
+  document.getElementById('gg').innerHTML="Added to cart";
 }
+
+}
+
+
 
 
 

@@ -40,7 +40,7 @@ export default function Cart(props) {
 
   return (
  
-
+<>
 
     
     <div className='ehi'>
@@ -48,6 +48,7 @@ export default function Cart(props) {
 {for_loop}
 
 
+</div>
 
 
 
@@ -62,7 +63,10 @@ export default function Cart(props) {
 
 
 	   
-    </div>
+   
+
+    </>
+
   )
 }
 
