@@ -14,7 +14,7 @@ const [cdo, setcdo] = useState(0)
 
 
   const klq = (data) => {
-    let mi = props.price-data
+    let mi = cdo-data
     setcdo(mi)
    
   }
