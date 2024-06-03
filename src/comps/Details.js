@@ -55,7 +55,9 @@ if  (!(ads.includes(nae)))
 {
   ads.push(nae)
   props.kig(ads);
-  props.kg(price)
+  props.kg(price);
+
+
 }
 
 

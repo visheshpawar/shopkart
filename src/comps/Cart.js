@@ -9,8 +9,13 @@ const [cdo, setcdo] = useState(0)
   useEffect(() => {
 
     setcdo(props.price)
+   
   }, []);
-    
+
+
+
+
+
 
 
   const klq = (data) => {
@@ -19,8 +24,18 @@ const [cdo, setcdo] = useState(0)
    
   }
 
+const kaka = (data) => {
 
 
+  
+const index = arr.indexOf(data[0]);
+
+
+  arr.splice(index); 
+console.log(arr)
+props.lr(data[1])
+
+}
 
   const for_loop = []
 
@@ -32,7 +47,7 @@ const [cdo, setcdo] = useState(0)
 
      
       product.filter((item)=>item.id== arr[i] ).map((item)=>(
-        <Carm key={item.id} id= {item.id} title={item.title} iurl={item.iurl}  price={item.price} jb={klq} />
+        <Carm key={item.id} id= {item.id} title={item.title} iurl={item.iurl}  price={item.price} jb={klq} lij={kaka} />
         
         ))
       

@@ -70,6 +70,22 @@ setdop(dat)
   }
 
 
+
+  const lro = (data)=> {
+
+    let f1=dp;
+    let f2 = Number(data)
+    
+     
+      
+       
+     var lm = f1-f2;
+    
+     setdp(lm);
+      vg.push(data);
+
+  }
+
   return (
     <>
 
@@ -78,15 +94,15 @@ setdop(dat)
        <Navbar title="ShopKart"/>       
        <Routes>
        <Route  default element = {<Cont stp={Pp} />} />
-       <Route exact path="/" element = {<Cont stp={Pp} />} />
-       <Route exact path="/mens" element = {<Men  stp={Pp} />} />
+       <Route exact path="/" element = {<Cont stp={Pp}  />} />
+       <Route exact path="/mens" element = {<Men  stp={Pp}    />} />
        <Route exact path="/women" element = {<Women stp={Pp} />} />
        <Route exact path="/kids" element = {<Kids stp={Pp}/>} />
        <Route exact path="/toys" element = {<Toys stp={Pp}/>} />
        <Route exact path="/purse" element = {<Purse stp={Pp}/>} />
        <Route exact path="/shoes" element = {<Shoes stp={Pp}/>} />
-       <Route exact path="/details" element = {<Details kg={dai} kig={daim}  price = {xf}  name = {fg} lk={fgg} />} />
-       <Route exact path="/cart" element = {<Cart detao = {vg} demp={dop}  price={dp} />} />
+       <Route exact path="/details" element = {<Details kg={dai} kig={daim}   price = {xf}  name = {fg} lk={fgg} />} />
+       <Route exact path="/cart" element = {<Cart detao = {vg} demp={dop}  price={dp} lr={lro} />} />
     </Routes> 
     </Router>
 

@@ -5,9 +5,13 @@ const Carm = (props) => {
 
 
 const removeitem = (data) => {
-document.getElementById(data).style.display="none";
-props.jb(props.price)
-console.log(props.title+1)
+
+//  document.getElementById(data).style.display="none";
+  props.jb(props.price)
+  console.log(props.title+1)
+  props.lij([props.id,props.price])
+  console.log(props.id)
+
 }
 
 const dfr = () =>{

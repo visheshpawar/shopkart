@@ -18,7 +18,6 @@ const defe = (word) =>
 
 
 
-
   return (
     <>
 
@@ -26,7 +25,7 @@ const defe = (word) =>
       <ul className="cards">
 
       {lit.filter((item) => item.gender =="male").map(item => (     
-  <Item key={item.id} title={item.title} iurl={item.iurl} price={item.price}  cw={defe}/> 
+  <Item key={item.id} title={item.title} iurl={item.iurl}  price={item.price}  cw={defe}/> 
      ))}
 
 

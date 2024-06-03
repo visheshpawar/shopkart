@@ -37,7 +37,7 @@ const [sdf, setsdf] = useState(1);
       
 
 {lit.filter((item) => item.gender =="male" || "female").map(item => (     
-  <Item key={item.id} id={item.id}  title={item.title} iurl={item.iurl} price={item.price}  cw={defe}/> 
+  <Item key={item.id}   id={item.id}  title={item.title} iurl={item.iurl} price={item.price}  cw={defe}/> 
      ))}
 
 
